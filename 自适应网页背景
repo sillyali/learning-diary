@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    <style>
+    
+      div .bg{
+	             position:fixed;
+	             top:0;
+	             left: 0;
+	              width: 100%;
+             	  height: 100%;
+              	background: url(...) no-repeat center 0; 
+	               background-size: cover;
+                /*	opacity:0.9 ;*/
+      }
+      
+    </style>
+		<title>页面背景随窗口大小变化</title>
+	</head>
+	<body>
+  
+    <div>
+      <span class="bg"></span>
+    </div>
+    
+	</body>
+</html>
+
+/*
+  position:fixed; 对象的位置相对于包含内容的布局视图。它的定位和显示不受用户平移的影响，但受用户缩放操作的影响。
+  no-repeat center 0 不重复，垂直位置居中，水平位置为零
+  background-size: cover; 在保持图像固有长宽比(如果有的话)的前提下，将图像缩放到最小的尺寸，使其宽度和高度都能完全覆盖背景定位区域
+  opacity:0.9 ; 不透明度属性控制元素的透明度和不透明度。它的值从0到1。假设父级默认值为1，不透明度为1的元素是完全不透明的，而不透明度
+                为0的元素是完全透明的。呈现元素时使用的不透明度是其不透明度与其祖先不透明度的乘积。备注不透明度设置应用统一整个对象。
+                在0.0到1.0范围之外的任何值都将被夹在这个范围内。
+*/
